@@ -8,10 +8,16 @@ phases:
       - echo Installing dependencies...
       - npm ci --legacy-peer-deps
 
+  test:
+    commands:
+      - echo Testing the React app...
+      - npm run test
+      
   build:
     commands:
       - echo Building the React app...
       - npm run build
+
 
 artifacts:
   base-directory: dist
