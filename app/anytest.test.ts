@@ -1,0 +1,5 @@
+describe("Testing failed test", () => {
+  it("should fail", () => {
+    expect(1).toBe(2)
+  })
+})

@@ -8,11 +8,11 @@ phases:
       - echo Installing dependencies...
       - npm ci --legacy-peer-deps
 
-  test:
+  pre_build:
     commands:
       - echo Testing the React app...
       - npm run test
-      
+
   build:
     commands:
       - echo Building the React app...
