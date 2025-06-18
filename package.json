@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "test": "jest --ci --coverage",
+    "test": "jest --silent --verbose --coverage --colors",
+    "test:file": "jest --watchAll --verbose --colors",
     "lint": "eslint .",
     "preview": "vite preview",
     "prettier": "prettier --write --ignore-unknown .",
