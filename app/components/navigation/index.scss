@@ -1,0 +1,22 @@
+nav {
+    &__list {
+      gap: 1rem;
+      display: flex;
+      list-style: none;
+      border: 1px solid #fff;
+    }
+    &__active {
+      color: #fff;
+    }
+
+    &__link {
+      color: #ff966d;
+      text-decoration: none;
+    }
+
+    &__link:hover {
+      color: #9c0483;
+    }
+
+  }
+

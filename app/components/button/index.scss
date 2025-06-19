@@ -1,0 +1,26 @@
+.button {
+  background-color: #3c6e3e;
+  border: none;
+  color: white;
+  padding: 1rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+
+  &__small {
+    font-size: 0.8rem;
+  }
+
+  &__medium {
+    font-size: 1rem;
+  }
+
+  &__large {
+    font-size: 1.2rem;
+  }
+}
+
+

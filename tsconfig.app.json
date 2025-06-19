@@ -6,7 +6,12 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "types": ["jest", "node", "@testing-library/jest-dom", "@testing-library/react"],
+    "types": [
+      "jest",
+      "node",
+      "@testing-library/jest-dom",
+      "@testing-library/react"
+    ],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -20,9 +25,14 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
+    "erasableSyntaxOnly": false,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["app/*"]
+    }
   },
-    "include": ["setup-tests.d.ts", "app", "**/*.ts", "**/*.tsx"]
+  "include": ["setup-tests.d.ts", "app", "**/*.ts", "**/*.tsx"]
 }
